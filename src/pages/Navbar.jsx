@@ -1,11 +1,10 @@
 import {  
-    Link,
-    NavLink,
-    Outlet
+    Link
 } from 'react-router-dom'
 import siteLogo from '../assets/art-logo.png'
 import Home from './Home'
 import Contact from './Contact'
+import Overview from './Overview'
 import Services from './Services'
 
 const Navbar = () => {
@@ -30,9 +29,9 @@ const Navbar = () => {
 
                     <div className="header-menu" id='site-menu'>
                         <button onClick={hideMenu}>X</button>
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Services</a>
+                        <a href="#home" onClick={hideMenu}>Home</a>
+                        <a href="#services" onClick={hideMenu}>Services</a>
+                        <a href="#contact" onClick={hideMenu}>Contact Me!</a>
                     </div>
 
                     <div className="hamburger-btn" onClick={showMenu}>
@@ -47,6 +46,7 @@ const Navbar = () => {
                 <div className="homepage">
                     <Home />
                     <Services />
+                    <Overview />
                     <Contact />
                 </div>
             </main>

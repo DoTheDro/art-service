@@ -7,7 +7,9 @@ body {
 header nav,
 .homepage .home-section>div,
 .homepage .about-section>div,
-.homepage .services-section>div {
+.homepage .services-section>div,
+.homepage .contact-section>div,
+.homepage .overview-section>div {
     max-width: 1280px;
     margin: auto;
 }
@@ -131,17 +133,90 @@ header .hamburger-btn button i {
 
 .homepage .services-section img {
     width: 100%;
-    max-width: 120px;
-}
-
-.homepage .services-section .services-card {
-    padding: 10px;
+    max-width: 100px;
 }
 
 .homepage .services-section .services-card-con {
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 3px 6px 0px #000;
+}
+
+/* Overview Styles */
+.homepage .overview-section {
+    padding: 2em 15px;
+    background: #00CF81;
+}
+
+.homepage .overview-section img {
+    width: 100%;
+}
+
+.homepage .overview-section p {
+    text-align: center;
+}
+
+.homepage .overview-section h2 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Contact Styles */
+.homepage .contact-section {
+    padding: 2em 15px;
+}
+
+.homepage .contact-section img {
+    width: 100%;
+}
+
+.homepage .contact-section .left-column {
+    display: flex;
+    align-items: center;
+}
+
+.homepage .contact-section .left-column .custom-contaienr {
+    width: 30%;
+    display: inline-block;
+}
+
+.homepage .contact-section .left-column .container-custom {
+    width: 70%;
+    display: inline-block;
+}
+
+.homepage .contact-section .left-column .container-custom h3 {
+    margin: 0;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.homepage .contact-section .right-column .contact-details {
+    padding-bottom: 15px;
+}
+
+.homepage .contact-section .right-column .contact-details .icon-container {
+    width: 10%;
+    display: inline-block;
+}
+
+.homepage .contact-section .right-column .contact-details .details-container {
+    width: 90%;
+    display: inline-block;
+}
+
+.homepage .contact-section .right-column .contact-details .details-container p {
+    text-align: center;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.homepage .contact-section .right-column .contact-details .details-container p span {
+    font-weight: bold;
 }
 
 /* Tablet View */
@@ -163,6 +238,38 @@ header .hamburger-btn button i {
 
     .homepage .hero-image {
         width: 50%;
+    }
+
+    .homepage .services-section .services-card {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .homepage .overview-section .left-column {
+        width: 100%;
+        max-width: 425px;
+        margin: auto;
+    }
+
+    .homepage .contact-section .left-column,
+    .homepage .contact-section .right-column {
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .homepage .contact-section .right-column .contact-details .details-container {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .homepage .contact-section .right-column .contact-details .icon-container {
+        max-width: 35px;
+        width: 100%;
+    }
+
+    .homepage .contact-section .right-column .contact-details {
+        text-align: center;
     }
 }
 
@@ -205,6 +312,41 @@ header .hamburger-btn button i {
 
     .homepage .hero-image {
         max-width: 400px;
+    }
+
+    .homepage .services-section .services-card {
+        width: 25%;
+        display: inline-block;
+    }
+
+    .homepage .services-section .services-card-con {
+        margin: 10px;
+    }
+
+    .homepage .overview-section .overview-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .homepage .overview-section .left-column {
+        width: 50%;
+        max-width: unset;
+        margin: unset;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .homepage .overview-section img {
+        max-width: 400px;
+    }
+
+    .homepage .overview-section .right-column {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .homepage .overview-section p {
+        text-align: left;
     }
 
 }
